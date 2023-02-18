@@ -1,0 +1,17 @@
+﻿@model List<int>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Mi App publicada CI/CD Visual</h1>
+    <h2 style="color:blue">@ViewData["SALUDO"]</h2>
+    <img src="~/images/a77a324ab80e4f478beed6eea5c0959a.jpg" style="width:250px;250px" />
+    <ul>
+        @foreach (int num in Model)
+        {
+            <li>@num</li>
+        }
+    </ul>
+</div>
