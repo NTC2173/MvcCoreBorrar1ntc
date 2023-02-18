@@ -16,12 +16,12 @@ namespace MvcCoreCICDVisual.Controllers
         public IActionResult Index()
         {
             //CODIGO DE SERVIDOR Y CODIGO DE CLIENTE
-            ViewData["SALUDO"] = "Bienvenido a mi App";
+            ViewData["SALUDO"] = "Mi App desde GitHub";
             Random random = new Random();
             List<int> numeros = new List<int>();
             for(int i=0; i < 10; i++)
             {
-                int aleat = random.Next(1, 100);
+                int aleat = random.Next(1, 10);
                 numeros.Add(aleat);
             }
 
